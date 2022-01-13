@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: hsl(233, 47%, 7%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.card{
+    width: 60rem;
+    height: 25rem;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+}
+
+.card-image{
+    height: 100%; 
+    width: 100%;
+    background-image: url(img/image-header-desktop.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.gradient{
+    background: rgba(109 13 141 / 50%);
+    position: absolute;
+    inset: 0; /* top: 0, left: 0, right: 0, bottom: 0 */
+}
+
+.card-left{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.content{
+    width: 360px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-left h1, .card-left h2{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+}
+
+.card-left h1 span{
+    color: hsl(277, 64%, 61%);
+}
+
+.main-texts p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 14px;
+    padding-top: 26px;
+    line-height: 22px;
+}
+
+.card-left ul p{
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+.card-left ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 375px){
+
+    .card{
+        width: 90%;
+        height: 90%;
+        flex-direction: column-reverse;
+        text-align: center;
+    }   
+
+    .card-left ul{
+        flex-direction: column;
+    }
+
+    .card-left ul li{
+        padding-top: 24px;
+    }
+
+    .content{
+        height: 100%;
+        align-items: center;
+    }
+    
+    .main-texts{
+        width: 300px;
+    }
+
+    .main-texts p{
+        padding: 26px;
+        padding-bottom: 20px;
+    }
+
+    .stats{
+        margin-bottom: 16px;
+    }
+
+    .card-left h1{
+        padding-top: 10px;
+    }
+
+}
